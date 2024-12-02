@@ -1,0 +1,13 @@
+public class TriangleChecker {
+
+    public static boolean areTriangular(double a, double b, double c) {
+        return (a + b > c) && (a + c > b) && (b + c > a);
+    }
+
+    public static void main(String[] args) {
+        // Test cases
+        System.out.println("Are 3.0, 4.0, 5.0 triangular? " + areTriangular(3.0, 4.0, 5.0)); // true
+        System.out.println("Are 1.0, 2.0, 3.0 triangular? " + areTriangular(1.0, 2.0, 3.0)); // false
+        System.out.println("Are 6.0, 10.0, 15.0 triangular? " + areTriangular(6.0, 10.0, 15.0)); // false
+    }
+}
